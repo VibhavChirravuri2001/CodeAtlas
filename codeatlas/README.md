@@ -18,8 +18,6 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5175
-
 ## Run (Neo4j)
 - Set `.env` in `server/` with NEO4J_* and `USE_SAMPLE_DATA=false`.
 - Ensure Neo4j has `Repo` nodes with `DEPENDS_ON` relations and `id`, `lang` properties.
