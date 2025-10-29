@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "core-utils",
+      "lang": "C++"
+    },
+    {
+      "id": "web-frontend",
+      "lang": "JavaScript"
+    },
+    {
+      "id": "api-gateway",
+      "lang": "TypeScript"
+    },
+    {
+      "id": "ml-service",
+      "lang": "Python"
+    },
+    {
+      "id": "auth-service",
+      "lang": "Go"
+    }
+  ],
+  "links": [
+    {
+      "source": "web-frontend",
+      "target": "api-gateway"
+    },
+    {
+      "source": "api-gateway",
+      "target": "auth-service"
+    },
+    {
+      "source": "api-gateway",
+      "target": "ml-service"
+    },
+    {
+      "source": "ml-service",
+      "target": "core-utils"
+    }
+  ]
+}
